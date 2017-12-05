@@ -1,0 +1,16 @@
+﻿booklist_controller.rbにてrenderを使用してtext => '文章'を呼び出した。
+今回はview/booklist/hello.html.erbを呼び出して同様の動作を実現する。
+booklist_controller.rbを以下の様に書き換える.
+def hello
+	render "booklist/hello"
+end
+するとview/booklist内のhelloファイルを読み込む。view内のファイル構造がview/コントローラ名/アクション名となっている場合、renderの記述抜きでも良い。
+
+変数でデータを受け渡すこともできるのでコントローラ側で設定した変数をアクション側が受け取って表示することもできる。
+booklist_controller.rbを以下の様に書き換える.
+def hello
+	@msg = '文章'　or 値
+end
+
+hello.html.erb
+<%= @msg %>
