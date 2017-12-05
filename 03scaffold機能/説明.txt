@@ -1,0 +1,9 @@
+rails g scaffold model1 field1:data1 ...
+モデルを作成する場合scaffoldを利用すると
+modelやmigrate,controllerに自動でモデル
+やフィールドの名称、設定、ルーティングなど
+が記述される。
+またビューも自動で作成され、データの追加、
+閲覧、削除の基本的な機能が自動で作成される。
+
+
