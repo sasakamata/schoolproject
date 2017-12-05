@@ -1,0 +1,8 @@
+rails g controller <名称>
+で作成されたコントローラはapp/controllerに保存される。
+初期状態は何も記述されてない。
+helloクラスは呼び出されたときtextでhello!を返す。
+このhelloクラスを呼び出す紐付けをconfig内のroutes.rbで設定する。
+get '名称' => '場所'
+で設定できる。
+rails serever を起動。http://localhost:3000/hello またはbyeでコントローラに記述した動作が返ってくる。
